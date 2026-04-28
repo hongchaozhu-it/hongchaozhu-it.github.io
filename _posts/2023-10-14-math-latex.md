@@ -1,47 +1,43 @@
 ---
-title: MathJax and LaTeX
-author: Tao He
+title: 数学公式与 LaTeX
+author: 朱洪超
 date: 2023-10-14
 category: Jekyll
 layout: post
 mermaid: true
 ---
 
-This jekyll-theme supports [MathJax](https://www.mathjax.org/) to render $\LaTeX$
-and mathematics expressions.
+这个主题支持 [MathJax](https://www.mathjax.org/)，可以在 Markdown 中渲染 $\LaTeX$ 数学公式。
 
-> ##### TIP
+> ##### 提示
 >
-> Currently, Kramdown uses double dollar sign delimiters for inline and display math:
-> [https://kramdown.gettalong.org/syntax.html#math-blocks](https://kramdown.gettalong.org/syntax.html#math-blocks).
+> 当前 Kramdown 使用双美元符号作为数学公式定界方式，写展示公式时尤其方便。
 {: .block-tip }
 
-e.g.,
+例如：
 
 ```markdown
-The well known Pythagorean theorem $x^2 + y^2 = z^2$ was
-proved to be invalid for other exponents.
-Meaning the next equation has no integer solutions:
+勾股定理可以写成 $x^2 + y^2 = z^2$。
+而下面这个方程在整数范围内没有非零解：
 
 $$ x^n + y^n = z^n $$
 ```
 
-The well known Pythagorean theorem $x^2 + y^2 = z^2$ was
-proved to be invalid for other exponents.
-Meaning the next equation has no integer solutions:
+勾股定理可以写成 $x^2 + y^2 = z^2$。
+而下面这个方程在整数范围内没有非零解：
 
 $$ x^n + y^n = z^n $$
 
-Another example with more complex markups:
+再看一个更常见的二次方程求根公式：
 
 ```markdown
-When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
+当 $a \ne 0$ 时，方程 $ax^2 + bx + c = 0$ 的解为：
 
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 ```
 
-When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
+当 $a \ne 0$ 时，方程 $ax^2 + bx + c = 0$ 的解为：
 
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
-Refer to the [MathJax website](https://docs.mathjax.org/en/latest/index.html) for more examples.
+如果你的站点会写算法、统计、经济学或课堂笔记，这个能力会非常方便。

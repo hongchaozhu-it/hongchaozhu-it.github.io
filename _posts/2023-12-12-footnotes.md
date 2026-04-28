@@ -1,125 +1,70 @@
 ---
-title: Using Footnotes
-author: Tao He
+title: 脚注写法示例
+author: 朱洪超
 date: 2023-12-12
 category: Jekyll
 layout: post
 mermaid: true
 ---
 
-This jekyll-theme supports [MathJax](https://www.mathjax.org/) to render footnotes
-in markdown.
+除了普通段落，这个主题也支持 Markdown 脚注，非常适合给术语、引用来源和补充说明留出不打断正文的空间。
 
-e.g.,
+例如：
 
 ```markdown
-The well known Pythagorean theorem $x^2 + y^2 = z^2$ was
-proved to be invalid for other exponents[^1].
-Meaning the next equation has no integer solutions:
+很多经典结论在正式写作中都需要附带出处[^1]。
+脚注能让正文保持干净，同时把延伸信息放到页面底部。
 
 $$ x^n + y^n = z^n $$
 ```
 
-The well known Pythagorean theorem $x^2 + y^2 = z^2$ was
-proved to be invalid for other exponents[^1].
-Meaning the next equation has no integer solutions:
+很多经典结论在正式写作中都需要附带出处[^1]。
+脚注能让正文保持干净，同时把延伸信息放到页面底部。
 
 $$ x^n + y^n = z^n $$
 
-Long contents
--------------
+为什么脚注好用
+--------------
 
-long contents .....
+当你在写下面这类内容时，脚注尤其合适：
 
-1. a
-2. b
-3. c
-4. d
+1. 概念解释
+2. 资料来源
+3. 版本备注
+4. 额外参考阅读
 
-### Sub title 1
+### 场景一：教程补充
 
-### Sub title 2
+正文保持流畅，补充信息放到底部即可。
 
-### Sub title 3
+### 场景二：引用来源
 
-Long contents
--------------
+读者可以先阅读，再决定是否追溯来源。
 
-long contents .....
+### 场景三：历史版本说明
 
-1. a
-2. b
-3. c
-4. d
+内容更新时，不必把所有背景都塞进正文。
 
-### Sub title 1
+长文里如何使用脚注
+------------------
 
-### Sub title 2
+脚注最好服务于阅读，而不是制造跳转负担。一般来说，一段里出现一到两个脚注已经足够。
 
-### Sub title 3
+### 建议一
 
-Long contents
--------------
+把脚注放在句末最自然。
 
-long contents .....
+### 建议二
 
-1. a
-2. b
-3. c
-4. d
+脚注内容尽量短，不要变成第二篇正文。
 
-### Sub title 1
+### 建议三
 
-### Sub title 2
+如果同一来源会反复出现，可以考虑在文末集中列参考资料。
 
-### Sub title 3
+收尾
+----
 
-Long contents
--------------
+脚注是一个小功能，但对中文知识站来说非常实用，尤其适合做教程、文献摘录和带出处的长文。
 
-long contents .....
-
-1. a
-2. b
-3. c
-4. d
-
-### Sub title 1
-
-### Sub title 2
-
-### Sub title 3
-
-Long contents
--------------
-
-long contents .....
-
-1. a
-2. b
-3. c
-4. d
-
-### Sub title 1
-
-### Sub title 2
-
-### Sub title 3
-
-Long contents
--------------
-
-long contents .....
-
-1. a
-2. b
-3. c
-4. d
-
-### Sub title 1
-
-### Sub title 2
-
-### Sub title 3
-
-[^1]: [https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem](https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem)
+[^1]: 这里可以放参考链接、书名、论文或补充说明。

@@ -1,3 +1,22 @@
+# jekyll
 _site/
 _draft/
 .jekyll-cache/
+
+# idea
+.idea/
+*.iml
+
+# vscode
+.vscode/
+
+# java
+target/
+*.class
+*.jar
+
+# git
+.git/
+
+# macos
+.DS_Store

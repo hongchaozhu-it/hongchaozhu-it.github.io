@@ -1,67 +1,59 @@
 ---
-title: Tips, Warnings, and Dangers
-author: Tao He
+title: 提示、注意与警告块
+author: 朱洪超
 date: 2022-06-30
 category: Jekyll
 layout: post
 ---
 
-This jekyll-theme supports tips, warnings, and dangers blocks and the style is referred
-from [the discord.js website][1].
+这个主题支持三种常见的信息提示块：提示、注意和警告。它们很适合放在教程、规范和操作步骤里。
 
-You could have the following [markdown attributes (supported by kramdown)][2]:
+这些区块依赖 [kramdown 的块级属性](https://kramdown.gettalong.org/quickref.html#block-attributes)。
 
-### Tips
+### 提示
 
-Using a `{: .block-tip}` attribute:
+给引用块加上 `{: .block-tip }` 即可：
 
 ```markdown
-> ##### TIP
+> ##### 提示
 >
-> This guide is last tested with @napi-rs/canvas^0.1.20, so make sure you have
-> this or a similar version after installation.
+> 这份指南最后一次验证时使用的是稳定版本环境，开始之前建议先确认本地依赖与文中示例一致。
 {: .block-tip }
 ```
 
-> ##### TIP
+> ##### 提示
 >
-> This guide is last tested with @napi-rs/canvas^0.1.20, so make sure you have
-> this or a similar version after installation.
+> 这份指南最后一次验证时使用的是稳定版本环境，开始之前建议先确认本地依赖与文中示例一致。
 {: .block-tip }
 
-### Warnings
+### 注意
 
-Using a `{: .block-warning}` attribute:
+给引用块加上 `{: .block-warning }`：
 
 ```markdown
-> ##### WARNING
+> ##### 注意
 >
-> Be sure that you're familiar with things like async/await and object destructuring
-> before continuing, as we'll be making use of features like these.
+> 继续操作前，最好先熟悉异步流程、目录结构和基础配置，否则很容易在中间步骤卡住。
 {: .block-warning }
 ```
 
-> ##### WARNING
+> ##### 注意
 >
-> Be sure that you're familiar with things like async/await and object destructuring
-> before continuing, as we'll be making use of features like these.
+> 继续操作前，最好先熟悉异步流程、目录结构和基础配置，否则很容易在中间步骤卡住。
 {: .block-warning }
 
-### Dangers
+### 警告
 
-Using a `{: .block-danger}` attribute:
+给引用块加上 `{: .block-danger }`：
 
 ```markdown
-> ##### DANGER
+> ##### 警告
 >
-> You cannot delete an ephemeral message.
+> 批量替换文章或重命名路径前，先确认永久链接规则，否则旧链接可能会失效。
 {: .block-danger }
 ```
 
-> ##### DANGER
+> ##### 警告
 >
-> You cannot delete an ephemeral message.
+> 批量替换文章或重命名路径前，先确认永久链接规则，否则旧链接可能会失效。
 {: .block-danger }
-
-[1]: https://discordjs.guide/popular-topics/canvas.html#setting-up-napi-rs-canvas
-[2]: https://kramdown.gettalong.org/quickref.html#block-attributes

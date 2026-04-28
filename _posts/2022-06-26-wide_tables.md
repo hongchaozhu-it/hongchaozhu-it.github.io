@@ -1,36 +1,39 @@
 ---
-title: Wide tables
-author: Tao He
+title: 宽表格排版示例
+author: 朱洪超
 date: 2022-06-26
 category: Jekyll
 layout: post
 ---
 
-A wide tables needs to be wrapped into a `div` with class `table-wrapper`
-to make sure it displayed as expected on mobile devices. For example,
+当表格列很多时，直接写 Markdown 表格会在手机上挤成一团。比较稳妥的做法，是用 `table-wrapper` 包一层，让它可以横向滚动。
+
+写法示例如下：
 
 ```markdown
 <div class="table-wrapper" markdown="block">
 
-|title1|title2|title3|title4|title5|title6|title7|title8|
+|栏目一|栏目二|栏目三|栏目四|栏目五|栏目六|栏目七|栏目八|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|1|2|3|4|5|6|7|8|
-|1|2|3|4|5|6|7|8|
-|1|2|3|4|5|6|7|8|
-|1|2|3|4|5|6|7|8|
+|首页|文章|归档|标签|搜索|统计|评论|分享|
+|摘要|封面|目录|脚注|数学|图表|表格|代码|
+|浅色|深色|字号|间距|字体|行高|边距|留白|
+|手册|博客|周报|教程|规范|复盘|日志|笔记|
 
 </div>
 ```
 
-Will be rendered as
+实际效果如下：
 
 <div class="table-wrapper" markdown="block">
 
-|title1|title2|title3|title4|title5|title6|title7|title8|
+|栏目一|栏目二|栏目三|栏目四|栏目五|栏目六|栏目七|栏目八|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|1|2|3|4|5|6|7|8|
-|1|2|3|4|5|6|7|8|
-|1|2|3|4|5|6|7|8|
-|1|2|3|4|5|6|7|8|
+|首页|文章|归档|标签|搜索|统计|评论|分享|
+|摘要|封面|目录|脚注|数学|图表|表格|代码|
+|浅色|深色|字号|间距|字体|行高|边距|留白|
+|手册|博客|周报|教程|规范|复盘|日志|笔记|
 
 </div>
+
+如果你的内容里经常出现参数对比表、版本对照表或功能矩阵，这个写法会很实用。
